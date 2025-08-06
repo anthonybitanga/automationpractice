@@ -11,9 +11,9 @@ public class LoginSteps {
     WebDriver driver = DriverFactory.getDriver();
     LoginPage loginPage = new LoginPage(driver);
 
-    @Given("I launch the browser")
+    @Given("I launch the shit")
     public void i_launch_the_browser() {
-        driver.get("https://example.com/login");
+        driver.get("https://www.automationexercise.com/");
     }
 
     @When("I open the login page")
