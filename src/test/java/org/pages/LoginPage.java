@@ -21,7 +21,7 @@ public class LoginPage {
     }
 
     public void verifyHomePage() {
-        assert driver.getTitle().contains("Home");
+        assert driver.getTitle().contains("Automation Exericse");
     }
 }
 

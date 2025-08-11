@@ -1,5 +1,6 @@
 package org.stepDefinitions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.pages.LoginPage;
