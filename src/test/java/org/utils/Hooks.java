@@ -1,11 +1,9 @@
 package org.utils;
 
 import io.cucumber.java.After;
-import io.cucumber.java.Before;;
+import io.cucumber.java.Before;
 
 public class Hooks {
-    public Hooks(DriverFactory driverManager) {
-    }
 
     @Before
     public void setUp() {

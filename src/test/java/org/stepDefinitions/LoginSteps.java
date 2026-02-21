@@ -9,8 +9,6 @@ import org.pages.LoginPage;
 
 public class LoginSteps {
 
-    public LoginSteps(DriverFactory driverFactory) {
-    }
 
     @Given("I launch the browser")
     public void i_launch_the_browser() {
