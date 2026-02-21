@@ -6,10 +6,7 @@ import org.utils.DriverFactory;
 
 public class LoginPage {
    
-    private final DriverFactory driverFactory;
-
     public LoginPage(DriverFactory driverFactory) {
-        this.driverFactory = driverFactory;
     }
 
 
@@ -24,7 +21,7 @@ public class LoginPage {
     // }
 
     public void verifyHomePage() {
-        assert driverFactory.getDriver().getTitle().contains("Automation Exericse");
+        assert DriverFactory.getDriver().getTitle().contains("Automation Exericse");
     }
 }
 

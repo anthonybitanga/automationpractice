@@ -8,18 +8,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverFactory {
     private static WebDriver driver;
 
-public static WebDriver getDriver() {
-        if (driver == null) { // Initialize the driver if it's null
-            WebDriverManager.chromedriver().setup(); // Automatically downloads and sets up ChromeDriver
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
-        return driver; // Return the initialized driver
+        return driver;
     }
-    
+
     public static void quitDriver() {
         if (driver != null) {
-            driver.quit();
+            driver.quit(); // Close the browser and end the WebDriver session
+            driver = null; // Reset the driver instance
         }
     }
 }
